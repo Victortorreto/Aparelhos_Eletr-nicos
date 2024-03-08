@@ -50,3 +50,7 @@ table {
   th {
     background-color: rgb(73, 191, 245);
   }
+  .qntd-invalida {
+    color: red;
+  }
+  

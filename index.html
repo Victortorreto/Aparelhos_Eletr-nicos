@@ -1,56 +1,59 @@
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet">
-        <title> Aparelhos eletrônicos</title> 
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <header>
-            <div class="logo_caixa">
-                <img src="image.png" title="Aparelhos eletrônicos" class="logo">
-            </div>
-        </header> 
-        <h1  class="ped" onClick="this.innerHTML='Cliquei!'">Pedidos</h1>
-        <hr>
-        <div class="container">
-        <table>
-            <tr>
-              <th>Nome</th>
-              <th>Produto</th>
-              <th>Quantidade</th>
-              <th>Valor Unitário</th>
-              <th>Total</th>
-            </tr>
-            <tr>
-              <td class="nome1">Victor</td>
-              <td class="produto1">Smartphone Samsung Galaxy A30</td>
-              <td class="qntd1">2</td>
-              <td class="valor1"> 1.499</td>
-              <td class="total1"> 1.499</td>
-            </tr>
-            <tr>
-              <td class="nome2">Maria</td>
-              <td class="produto2">Fone de ouvido AirPods Apple</td>
-              <td class="qntd2">1</td>
-              <td class="valor2"> 1.399</td>
-              <td class="total2"> 1.399</td>
-            </tr>
-            <tr>
-              <td class="nome3">Patricia</td>
-              <td class="produto3">iPhone 15</td>
-              <td class="qntd3">1</td>
-              <td class="valor3"> 7.299</td>
-              <td class="total3">7.299</td>
-            </tr>
-            <tr>
-                <td class="nome4">Vitoria</td>
-                <td class="produto4">iPhone 15</td>
-                <td class="qntd4">4</td>
-                <td class="valor4"> 7.299</td>
-                <td class="total4"> 7.299</td>
-              </tr>
-          </table> 
-          <script src="teste.js"></script>
-        </div>
-    </body>   
+
+<head>
+  <link href="style.css" rel="stylesheet">
+  <title> Aparelhos eletrônicos</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header>
+    <div class="logo_caixa">
+      <img src="image.png" title="Aparelhos eletrônicos" class="logo">
+    </div>
+  </header>
+  <h1  class="ped">Encomenda</h1>
+  <hr>
+  <div class="container">
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Valor Unitário</th>
+        <th>Total</th>
+      </tr>
+      <tr class="cliente">
+        <td class="nome">Victor</td>
+        <td class="produto">Smartphone Samsung Galaxy A30</td>
+        <td class="qntd"></td>
+        <td class="valor">3499</td>
+        <td class="total"></td>
+      </tr>
+      <tr class="cliente">
+        <td class="nome">Maria</td>
+        <td class="produto">Fone de ouvido AirPods Apple</td>
+        <td class="qntd">6</td>
+        <td class="valor">1399</td>
+        <td class="total"></td>
+      </tr>
+      <tr class="cliente">
+        <td class="nome">Patricia</td>
+        <td class="produto">iPhone 15</td>
+        <td class="qntd">5</td>
+        <td class="valor"> 7299</td>
+        <td class="total"></td>
+      </tr>
+      <tr class="cliente">
+        <td class="nome">Vitoria</td>
+        <td class="produto">iPhone 15</td>
+        <td class="qntd">3</td>
+        <td class="valor"> 7.fj299</td>
+        <td class="total"> </td>
+      </tr>
+    </table>
+    <script src="calcula_total.js"></script>
+  </div>
+</body>
+
 </html>
