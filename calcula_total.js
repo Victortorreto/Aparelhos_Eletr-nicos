@@ -63,10 +63,10 @@ function Inserir(){
     var Tabela = document.querySelector(".tabela");
     var linha = Tabela.insertRow();
 
-    var nome = document.getElementById("nome").value;
-    var produto = document.getElementById("produto").value;
-    var qntd = parseInt(document.getElementById("quantidade").value);
-    var valor = parseFloat(document.getElementById("valor").value);
+    var nome = document.getElementById("nme").value;
+    var produto = document.getElementById("pruto").textContent;
+    var qntd = parseInt(document.getElementById("qtd").value);
+    var valor = parseFloat(document.getElementById("vlor").value);
     var total = qntd * valor;
 
     var linha1 = linha.insertCell(0);
@@ -79,7 +79,8 @@ function Inserir(){
     linha1.textContent = nome;
     linha2.textContent = produto;
     linha3.textContent = qntd;
-    linha4.textContent = valor;
-    linha5.textContent = total;
-}
+    linha4.textContent = formatarValor(valor);
+    linha5.textContent = formatarValor(total);
+} 
+
 
