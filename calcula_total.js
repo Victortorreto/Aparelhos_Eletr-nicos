@@ -64,7 +64,7 @@ function Inserir(){
     var linha = Tabela.insertRow();
 
     var nome = document.getElementById("nme").value;
-    var produto = document.getElementById("pruto").textContent;
+    var produto = document.getElementById("prduto").value;
     var qntd = parseInt(document.getElementById("qtd").value);
     var valor = parseFloat(document.getElementById("vlor").value);
     var total = qntd * valor;
