@@ -58,15 +58,34 @@ function formatarValor(valor) {
     }
 }  
 }
+function validarInserir() {
+    var qtd = parseInt(document.getElementById("qtd").value);
+    var valor = parseFloat(document.getElementById("valor").value);
+
+    if (!validarQuantidade(qtd)) {
+        alert("Quantidade inválida! Insira novamente a quantidade.");
+        return false;
+    }
+
+    if (!validarValorUnitario(valor)) {
+        alert("Valor unitário inválido! Insira novamente o valor do produto .");
+        return false;
+    }
+
+    return true;
+}
 
 function Inserir(){
+    if (!validarInserir()) {
+        return;
+    }
     var Tabela = document.querySelector(".tabela");
     var linha = Tabela.insertRow();
 
     var nome = document.getElementById("nme").value;
     var produto = document.getElementById("prduto").value;
     var qntd = parseInt(document.getElementById("qtd").value);
-    var valor = parseFloat(document.getElementById("vlor").value);
+    var valor = parseFloat(document.getElementById("valor").value);
     var total = qntd * valor;
 
     var linha1 = linha.insertCell(0);
