@@ -32,6 +32,7 @@ header{
   width: 80%; 
   margin-left: 10%; 
   margin-right: 10%;
+  
 } 
 hr {
   border: 1px solid rgb(12, 12, 12);
@@ -83,3 +84,11 @@ table {
     color: white;
     font-weight: bold;
   }
+  .fadeOut{
+  opacity: 0;
+  transition: 40s;
+  }
+ 
+  
+
+  

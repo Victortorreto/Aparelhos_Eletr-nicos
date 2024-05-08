@@ -60,21 +60,23 @@ function formatarValor(valor) {
 }
 function validarInserir() {
     var qtd = parseInt(document.getElementById("qtd").value);
-    var valor = parseFloat(document.getElementById("valor").value);
+    var vlor = parseFloat(document.getElementById("vlor").value);
 
-    if (!validarQuantidade(qtd)) {
-        alert("Quantidade inválida! Insira novamente a quantidade.");
+    if (!validarQuantidade(qtd) && validarValorUnitario(vlor)) {
+        alert("Quantidade ou valor unitário inválidos! Insira novamente os dados.");
         return false;
     }
 
-    if (!validarValorUnitario(valor)) {
+    /*if (!validarValorUnitario(vlor)) {
         alert("Valor unitário inválido! Insira novamente o valor do produto .");
         return false;
-    }
+    }*/
 
     return true;
 }
 
+
+//Função para inserir novas encomendas
 function Inserir(){
     if (!validarInserir()) {
         return;
@@ -85,7 +87,7 @@ function Inserir(){
     var nome = document.getElementById("nme").value;
     var produto = document.getElementById("prduto").value;
     var qntd = parseInt(document.getElementById("qtd").value);
-    var valor = parseFloat(document.getElementById("valor").value);
+    var valor = parseFloat(document.getElementById("vlor").value);
     var total = qntd * valor;
 
     var linha1 = linha.insertCell(0);
@@ -100,6 +102,7 @@ function Inserir(){
     linha3.textContent = qntd;
     linha4.textContent = formatarValor(valor);
     linha5.textContent = formatarValor(total);
+
 } 
 
 
